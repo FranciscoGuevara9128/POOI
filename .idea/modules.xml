@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/POOI.iml" filepath="$PROJECT_DIR$/.idea/POOI.iml" />
       <module fileurl="file://$PROJECT_DIR$/agendaContactos/agendaContactos.iml" filepath="$PROJECT_DIR$/agendaContactos/agendaContactos.iml" />
       <module fileurl="file://$PROJECT_DIR$/estadisticaPalabras/estadisticaPalabras.iml" filepath="$PROJECT_DIR$/estadisticaPalabras/estadisticaPalabras.iml" />
@@ -9,6 +10,9 @@
       <module fileurl="file://$PROJECT_DIR$/gestorLibros/gestorLibros.iml" filepath="$PROJECT_DIR$/gestorLibros/gestorLibros.iml" />
       <module fileurl="file://$PROJECT_DIR$/inventarioProductos/inventarioProductos.iml" filepath="$PROJECT_DIR$/inventarioProductos/inventarioProductos.iml" />
       <module fileurl="file://$PROJECT_DIR$/sistemaCalificaciones/sistemaCalificaciones.iml" filepath="$PROJECT_DIR$/sistemaCalificaciones/sistemaCalificaciones.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/PracticaClase.iml" filepath="$PROJECT_DIR$/PracticaClase.iml" />
+>>>>>>> c968f88 (Ejercicios 9 y 10)
     </modules>
   </component>
 </project>
