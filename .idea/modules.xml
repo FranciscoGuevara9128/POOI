@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/POOI.iml" filepath="$PROJECT_DIR$/.idea/POOI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agendaContactos/agendaContactos.iml" filepath="$PROJECT_DIR$/agendaContactos/agendaContactos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/estadisticaPalabras/estadisticaPalabras.iml" filepath="$PROJECT_DIR$/estadisticaPalabras/estadisticaPalabras.iml" />
+      <module fileurl="file://$PROJECT_DIR$/estudiantes/estudiantes.iml" filepath="$PROJECT_DIR$/estudiantes/estudiantes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gestorLibros/gestorLibros.iml" filepath="$PROJECT_DIR$/gestorLibros/gestorLibros.iml" />
+      <module fileurl="file://$PROJECT_DIR$/inventarioProductos/inventarioProductos.iml" filepath="$PROJECT_DIR$/inventarioProductos/inventarioProductos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sistemaCalificaciones/sistemaCalificaciones.iml" filepath="$PROJECT_DIR$/sistemaCalificaciones/sistemaCalificaciones.iml" />
+    </modules>
+  </component>
+</project>
