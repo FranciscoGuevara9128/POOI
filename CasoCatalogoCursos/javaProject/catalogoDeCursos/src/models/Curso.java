@@ -63,4 +63,12 @@ public class Curso {
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
     public String getTitulo() { return titulo; }
+
+    public int getNivel() {
+        return Nivel.values().length;
+    }
+
+    public int getPrecio() {
+        return (int) precio;
+    }
 }
