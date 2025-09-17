@@ -8,16 +8,20 @@ import java.util.Date;
 import java.util.List;
 
 public class Usuario {
+    private static int contadorId = 0; // contador estático para asignar ids únicos
+
     private int id;
-    public String nombre;
-    public String email;
+    private String nombre;
+    private String email;
     private String password;
-    public Rol rol;
+    private Rol rol;
 
     private List<CursoGuardado> listaGuardados;
     private List<Calificacion> listaCalificaciones;
 
+    // Constructor
     public Usuario(String nombre, String email, String password, Rol rol) {
+        this.id = ++contadorId; // asigna id automáticamente
         this.nombre = nombre;
         this.email = email;
         this.password = password;
@@ -27,18 +31,6 @@ public class Usuario {
     }
 
     // Operaciones CRUD y funcionales
-    public void crearUsuario() {
-        // lógica para crear usuario
-    }
-
-    public void actualizarUsuario() {
-        // lógica para actualizar usuario
-    }
-
-    public void eliminarUsuario() {
-        // lógica para eliminar usuario
-    }
-
     public void verPerfil() {
         System.out.println("Usuario: " + nombre + ", Email: " + email + ", Rol: " + rol);
     }
@@ -61,21 +53,11 @@ public class Usuario {
         }
     }
 
-    // Getters y Setters (opcional)
+    // Getters y Setters
     public int getId() { return id; }
-    public void setId(int id) { this.id = id; }
     public String getPassword() { return password; }
     public void setPassword(String password) { this.password = password; }
-
-    public Rol getRol() {
-        return rol;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public String getEmail() {
-        return email;
-    }
+    public Rol getRol() { return rol; }
+    public String getNombre() { return nombre; }
+    public String getEmail() { return email; }
 }

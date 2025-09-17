@@ -8,17 +8,17 @@ import java.util.List;
 
 public class Curso {
     private int id;
-    public String titulo;
-    public String descripcion;
-    public Nivel nivel;
-    public int duracion; // en horas
-    public double precio;
-    public Modalidad modalidad;
-    public String ubicacion;
-    public String enlace;
+    private String titulo;
+    private String descripcion;
+    private Nivel nivel;
+    private int duracion; // en horas
+    private double precio;
+    private Modalidad modalidad;
+    private String ubicacion; // solo para PRESENCIAL
+    private String enlace;    // solo para VIRTUAL
 
-    private List<Calificacion> listaCalificaciones;
-    private List<CursoGuardado> listaGuardados;
+    private final List<Calificacion> listaCalificaciones;
+    private final List<CursoGuardado> listaGuardados;
 
     public Curso(String titulo, String descripcion, Nivel nivel, int duracion, double precio,
                  Modalidad modalidad, String ubicacion, String enlace) {
@@ -34,17 +34,9 @@ public class Curso {
         this.listaGuardados = new ArrayList<>();
     }
 
-    // Operaciones CRUD y funcionales
-    public void crearCurso() {}
-    public void actualizarCurso() {}
-    public void eliminarCurso() {}
-    public void mostrarInfo() {
-        System.out.println("Curso: " + titulo + " - Nivel: " + nivel + " - Modalidad: " + modalidad);
-    }
-
-    public float calcularPromedioCalificaciones() {
-        if (listaCalificaciones.isEmpty()) return 0;
-        float suma = 0;
+    public double calcularPromedioCalificaciones() {
+        if (listaCalificaciones.isEmpty()) return 0.0;
+        double suma = 0.0;
         for (Calificacion c : listaCalificaciones) {
             suma += c.getValor();
         }
@@ -59,16 +51,32 @@ public class Curso {
         listaGuardados.add(cg);
     }
 
-    // Getters y Setters
-    public int getId() { return id; }
-    public void setId(int id) { this.id = id; }
+    // Getters y Setters necesarios
+
     public String getTitulo() { return titulo; }
+    public void setTitulo(String titulo) { this.titulo = titulo; }
 
-    public int getNivel() {
-        return Nivel.values().length;
-    }
+    public String getDescripcion() { return descripcion; }
+    public void setDescripcion(String descripcion) { this.descripcion = descripcion; }
 
-    public int getPrecio() {
-        return (int) precio;
-    }
+    public Nivel getNivel() { return nivel; }
+    public void setNivel(Nivel nivel) { this.nivel = nivel; }
+
+    public int getDuracion() { return duracion; }
+    public void setDuracion(int duracion) { this.duracion = duracion; }
+
+    public double getPrecio() { return precio; }
+    public void setPrecio(double precio) { this.precio = precio; }
+
+    public Modalidad getModalidad() { return modalidad; }
+    public void setModalidad(Modalidad modalidad) { this.modalidad = modalidad; }
+
+    public String getUbicacion() { return ubicacion; }
+    public void setUbicacion(String ubicacion) { this.ubicacion = ubicacion; }
+
+    public String getEnlace() { return enlace; }
+    public void setEnlace(String enlace) { this.enlace = enlace; }
+
+    public List<Calificacion> getListaCalificaciones() { return listaCalificaciones; }
+    public List<CursoGuardado> getListaGuardados() { return listaGuardados; }
 }

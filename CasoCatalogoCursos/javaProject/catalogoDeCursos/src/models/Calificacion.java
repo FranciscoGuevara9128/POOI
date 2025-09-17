@@ -18,14 +18,6 @@ public class Calificacion {
         this.fecha = fecha;
     }
 
-    // Operaciones
-    public void crearCalificacion() {}
-    public void actualizarCalificacion() {}
-    public void eliminarCalificacion() {}
-    public void mostrarCalificacion() {
-        System.out.println("Curso: " + curso.getTitulo() + " - Valor: " + valor + " - Comentario: " + comentario);
-    }
-
     // Getters
     public int getValor() { return valor; }
 }
